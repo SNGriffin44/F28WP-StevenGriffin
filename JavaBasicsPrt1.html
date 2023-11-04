@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title> java basics </title>
+<head>
+	</head>
+	<body>
+		<h1 align="centre" id = "test" onClick = "change()"> Click me! </h1>
+		<p> Here we are testing event handling. Using onClick in this case. Using an ID as an identifier we use that to change the colour of text on click. </p>
+		<script type="text/javascript">
+			var changed = false;
+		function change(){
+			let element = document.getElementById("test");
+			if (changed == false){
+				element.style.color = "red";
+				changed = true;
+			} else{
+				element.style.color = "black";
+				changed = false
+			}
+
+
+		} </script>
+	</body>
+		<footer> <a href = "hub.html"> Back to Hub </a> </footer>
+</html>
+			
